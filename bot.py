@@ -2,7 +2,6 @@ import datetime
 from authentication import api
 import random
 
-#probably should move all this to a main function?
 last_response = api.user_timeline(screen_name = '@GospelofKanye', count=1) #returns a list of recent statuses
 most_recent_status_id = last_response[0].id
 most_recent_kanye_tweets = api.user_timeline(screen_name = '@kanyewest') #pull most recent 20 tweets from kanye's twitter feed
